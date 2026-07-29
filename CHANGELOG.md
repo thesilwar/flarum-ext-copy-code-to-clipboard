@@ -6,6 +6,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 ## Unreleased
 
+- Publish the maintained fork as `thesilwar/flarum-ext-copy-code-to-clipboard`.
 - Add dual Flarum `^1.8` and `^2.0` compatibility.
 - Build and select separate Flarum 1 and Flarum 2 frontend assets.
 - Add duplicate-mount protection and support updated post content.

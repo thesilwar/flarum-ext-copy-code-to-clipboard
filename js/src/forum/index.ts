@@ -3,7 +3,7 @@ import app from "flarum/forum/app";
 import CommentPost from "flarum/forum/components/CommentPost";
 import CopyButton from "./components/CopyButton";
 
-app.initializers.add("nearata-copy-code-to-clipboard", () => {
+app.initializers.add("thesilwar-copy-code-to-clipboard", () => {
 	const mountCopyButtons = function (this: CommentPost) {
 		this.element.querySelectorAll("pre").forEach((element) => {
 			if (

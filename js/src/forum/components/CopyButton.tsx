@@ -21,7 +21,7 @@ export default class CopyButton extends Component {
 				}
 				onclick={this.onClick.bind(this)}
 				aria-label={app.translator.trans(
-					`nearata-copy-code-to-clipboard.forum.${
+					`thesilwar-copy-code-to-clipboard.forum.${
 						this.failed ? "copy_failed" : this.clicked ? "copied" : "copy"
 					}`,
 				)}
