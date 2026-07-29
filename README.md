@@ -8,9 +8,14 @@
 
 ![](screenshot.png)
 
-## Note
+## Compatibility
 
-This extension works only in secure contexts (https).
+- Flarum 1.8, including the 1.8.14 and 1.8.16 test installations
+- Flarum 2.0 release candidates and stable releases
+
+The package ships separate frontend assets for Flarum 1 and Flarum 2. The
+matching asset is selected automatically at runtime. The modern Clipboard API
+is used in secure contexts, with a legacy copy fallback for HTTP installations.
 
 ## Install
 

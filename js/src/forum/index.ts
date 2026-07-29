@@ -4,17 +4,22 @@ import CommentPost from "flarum/forum/components/CommentPost";
 import CopyButton from "./components/CopyButton";
 
 app.initializers.add("nearata-copy-code-to-clipboard", () => {
-	extend(CommentPost.prototype, "oncreate", function () {
-		if (!window.isSecureContext) {
-			return;
-		}
+	const mountCopyButtons = function (this: CommentPost) {
+		this.element.querySelectorAll("pre").forEach((element) => {
+			if (
+				!element.querySelector("code") ||
+				element.querySelector(".NearataCopyCodeToClipboard")
+			) {
+				return;
+			}
 
-		this.element.querySelectorAll("pre").forEach((el) => {
 			const container = document.createElement("div");
 			container.classList.add("NearataCopyCodeToClipboard");
-
-			el.append(container);
+			element.append(container);
 			m.mount(container, CopyButton);
 		});
-	});
+	};
+
+	extend(CommentPost.prototype, "oncreate", mountCopyButtons);
+	extend(CommentPost.prototype, "onupdate", mountCopyButtons);
 });

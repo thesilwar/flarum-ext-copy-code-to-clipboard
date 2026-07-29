@@ -10,7 +10,7 @@
         "source": "https://github.com/Nearata/flarum-ext-copy-code-to-clipboard"
     },
     "require": {
-        "flarum/core": "^1.8"
+        "flarum/core": "^1.8 || ^2.0.0@beta"
     },
     "authors": [
         {
@@ -24,6 +24,9 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "2.3.x-dev"
+        },
         "flarum-extension": {
             "title": "Copy Code To Clipboard",
             "category": "feature",

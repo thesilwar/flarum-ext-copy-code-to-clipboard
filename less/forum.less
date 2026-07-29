@@ -1,7 +1,8 @@
 .Post-body pre {
   position: relative;
 
-  &:hover .NearataCopyCodeToClipboard {
+  &:hover .NearataCopyCodeToClipboard,
+  &:focus-within .NearataCopyCodeToClipboard {
     opacity: 1;
   }
 }
@@ -11,5 +12,17 @@
   top: 0;
   right: 0;
   opacity: 0;
-  transition: all .25s ease;
+  transition: opacity .25s ease;
+}
+
+@media (hover: none) {
+  .NearataCopyCodeToClipboard {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .NearataCopyCodeToClipboard {
+    transition: none;
+  }
 }

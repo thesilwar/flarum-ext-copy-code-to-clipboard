@@ -1,3 +1,5 @@
 nearata-copy-code-to-clipboard:
   forum:
     copy: Copy to clipboard
+    copied: Copied to clipboard
+    copy_failed: Copy failed

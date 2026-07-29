@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+- Add dual Flarum `^1.8` and `^2.0` compatibility.
+- Build and select separate Flarum 1 and Flarum 2 frontend assets.
+- Add duplicate-mount protection and support updated post content.
+- Report clipboard failures and support HTTP installations with a fallback.
+- Improve keyboard, touch, and reduced-motion accessibility.
+
 ## [2.2.1](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v2.2.0...v2.2.1) (2025-09-08)
 
 
